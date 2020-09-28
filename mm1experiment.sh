@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IFACE=$(ip route get 10.10.2.255 | head -n 1 | cut d' ' -f 4)
+IFACE=$(ip route get 10.10.2.255 | head -n 1 | cut -d' ' -f 4)
 
 l_start=120
 l_end=240
