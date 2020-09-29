@@ -1,6 +1,6 @@
 library(ggplot2)
 
-exp <- read.table("rData.csv", header=FALSE, sep=",")
+exp <- read.table("mm1experiment.csv", header=FALSE, sep=",")
 names(exp) <- c("lambda", "exp", "qlen")
 exp$rho <- exp$lambda/244.140625
 
